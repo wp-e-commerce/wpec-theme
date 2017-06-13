@@ -1,0 +1,58 @@
+
+/* Globals: All the global re-usable stuff.
+---------------------------------------------------------------------------------------------------- */
+
+// Reset first.
+
+@import 'styles/global-reset';
+
+// Animations.
+
+@import 'styles/global-animations';
+
+// Typography, buttons and forms.
+
+@import 'styles/global-typography';
+@import 'styles/global-buttons';
+@import 'styles/global-forms';
+
+// Global containers.
+
+@import 'styles/global-containers';
+@import 'styles/global-cover';
+
+// Global menus.
+
+@import 'styles/global-menus';
+
+// Global panels.
+
+@import 'styles/global-panels';
+
+// Global cart styles.
+
+@import 'styles/global-cart';
+
+/* Individual Parts: All the single-page specific stuff.
+---------------------------------------------------------------------------------------------------- */
+
+// The Header & Footer.
+
+@import 'styles/part-header';
+@import 'styles/part-footer';
+
+// Blog specific stuff.
+
+@import 'styles/part-article';
+@import 'styles/part-article-comments';
+
+// Commerce stuff.
+
+@import 'styles/part-product';
+@import 'styles/part-product-archive';
+@import 'styles/part-cart';
+@import 'styles/part-cart-side';
+@import 'styles/part-checkout';
+@import 'styles/part-thanks';
+@import 'styles/part-account';
+

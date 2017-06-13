@@ -1,0 +1,108 @@
+
+/* Comments: The comments section for single articles.
+---------------------------------------------------------------------------------------------------- */
+
+#comments {
+  padding: 88px 0 40px;
+  border-top: 1px solid rgba(#000000, 0.05);
+  
+  // The main intro.
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 85px;
+
+    h3 {
+      margin-bottom: 23px;
+    }
+
+    .button {
+      margin: 0 3.5px;
+      display: inline-block;
+      float: none;
+      margin-bottom: 15px;
+    }
+  }
+  
+  // Individual comments.
+
+  .comment {
+    width: 100%;
+    float: left;
+    padding-top: 21px;
+    margin-bottom: 60px;
+    border-top: 1px solid rgba(#000000, 0.05);
+    
+    // The comment person.
+
+    .person {
+      width: 40%;
+      float: left;
+
+      @media ('max-width: 940px') {
+        width: 100%;
+        padding-bottom: 18px;
+        margin-bottom: 21px;
+        border-bottom: 1px solid rgba(#000000, 0.05);
+      }
+
+      .meta {
+        float: left;
+
+        &.profile {
+          width: 30px;
+          height: 30px;
+          float: left;
+          transform: translateY(-2px);
+          background-color: rgba(#000000, 0.05);
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          text-align: center;
+          font-size: 12px;
+          line-height: 30px;
+        }
+
+        &.name {
+          float: left;
+          margin-left: 15px;
+        }
+
+        &.date {
+          float: right;
+          margin-right: 60px;
+          text-align: right;
+
+          @media ('max-width: 940px') {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    
+    // The comment text.
+
+    .text {
+      width: 60%;
+      float: left;
+
+      @media ('max-width: 940px') {
+        width: 100%;
+      }
+
+      p {
+        margin-bottom: 21px;
+      }
+
+      .actions {
+        width: 100%;
+        float: left;
+
+        .button {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

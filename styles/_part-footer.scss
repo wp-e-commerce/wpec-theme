@@ -1,0 +1,94 @@
+
+/* The Footer
+---------------------------------------------------------------------------------------------------- */
+
+#footer {
+  padding: 100px 0 10px;
+  background-color: #000000;
+
+  // Add the fadeinup animation.
+
+  animation-name: fadeinup;
+  animation-duration: .75s;
+  animation-fill-mode: both;
+
+  // Style the newsletter bit.
+
+  .newsletter {
+    padding: 0 0 50px;
+    border-bottom: 1px solid rgba(#ffffff, 0.15);
+    font-size: 16px;
+    color: rgba(#ffffff, 0.85);
+    text-align: center;
+
+    p {
+      margin-bottom: 22px;
+    }
+
+    form {
+      width: 100%;
+      max-width: 400px;
+      display: inline-block;
+      position: relative;
+
+      input {
+        width: 100%;
+        height: 40px;
+        padding: 0 20px;
+        background-color: rgba(#ffffff, 0.15);
+        border: 1px solid rgba(#ffffff, 0.075);
+        border-radius: 20px;
+        line-height: 40px;
+        color: #ffffff;
+      }
+
+      .submit {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        background-color: #ffffff;
+
+        svg {
+          height: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          fill: rgba(#000000, 0.85);
+        }
+      }
+    }
+  }
+
+  // The footer menu.
+
+  .menus {
+    padding-top: 41px;
+    color: rgba(#ffffff, 0.85);
+
+    .menu {
+      margin-bottom: 60px;
+
+      @media ('max-width: 480px') {
+        margin-bottom: 30px;
+      }
+
+      h3 {
+        color: #ffffff;
+      }
+
+      li {
+        a {
+          color: rgba(#ffffff, 0.5);
+
+          &:hover {
+            color: rgba(#ffffff, 0.85);
+          }
+        }
+      }
+    }
+  }
+}

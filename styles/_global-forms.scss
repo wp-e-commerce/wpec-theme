@@ -1,0 +1,301 @@
+
+/* Base Forms
+---------------------------------------------------------------------------------------------------- */
+
+form {
+  
+  // Base input style.
+  
+  input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+  }
+  
+  // Placeholder style.
+
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: rgba(#000000, .5);
+    transition-duration: 0.25s;
+  }
+
+  input:-moz-placeholder,
+  textarea:-moz-placeholder {
+    color: rgba(#000000, .5);
+    transition-duration: 0.25s;
+  }
+
+  input:-ms-input-placeholder,
+  textarea:-ms-input-placeholder {
+    color: rgba(#000000, .5);
+    transition-duration: 0.25s;
+  }
+  
+  // Dark placeholder style.
+
+  &.dark {
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+      color: rgba(#ffffff, .5);
+    }
+
+    input:-moz-placeholder,
+    textarea:-moz-placeholder {
+      color: rgba(#ffffff, .5);
+    }
+
+    input:-ms-input-placeholder,
+    textarea:-ms-input-placeholder {
+      color: rgba(#ffffff, .5);
+    }
+  }
+  
+  // Focus style.
+  
+  input:focus,
+  textarea:focus {
+    color: #000000;
+  }
+
+  input:focus::-webkit-input-placeholder,
+  textarea:focus::-webkit-input-placeholder {
+    color: rgba(#000000, 0.25);
+  }
+
+  input:focus:-moz-placeholder,
+  textarea:focus:-moz-placeholder {
+    color: rgba(#000000, 0.25);
+  }
+  
+  input:focus:-ms-input-placeholder,
+  textarea:focus:-ms-input-placeholder {
+    color: rgba(#000000, 0.25);
+  }
+  
+  // Dark focus style.
+  
+  &.dark {
+    input:focus,
+    textarea:focus {
+      color: #ffffff;
+    }
+  
+    input:focus::-webkit-input-placeholder,
+    textarea:focus::-webkit-input-placeholder {
+      color: rgba(#ffffff, 0.25);
+    }
+  
+    input:focus:-moz-placeholder,
+    textarea:focus:-moz-placeholder {
+      color: rgba(#ffffff, 0.25);
+    }
+    
+    input:focus:-ms-input-placeholder,
+    textarea:focus:-ms-input-placeholder {
+      color: rgba(#ffffff, 0.25);
+    }
+  }
+}
+
+/* Form Groups: Checkout, Comments, Login, etc.
+---------------------------------------------------------------------------------------------------- */
+
+.forms {
+  form {
+    margin-bottom: 7px;
+  
+    .row {
+      margin-bottom: 40px;
+  
+      // Type styling.
+  
+      header {
+        margin-bottom: 23px;
+  
+        h3 {
+          font-size: 18px;
+          font-weight: 900;
+        }
+        
+        p {
+          font-size: 14px;
+        }
+      }
+  
+      // Field grouping.
+  
+      .group {
+        width: 100%;
+        float: left;
+        position: relative;
+        margin: 0 0 30px -25px;
+        border: 1px solid rgba(#000000, .05);
+        border-radius: 3px;
+  
+        &:last-of-type {
+          margin-bottom: 9px;
+        }
+        
+        // Field group styling.
+  
+        .fields {
+          float: left;
+          padding: 24px 25px;
+          position: relative;
+          
+          // Filed sizing.
+          
+          &.whole {
+            width: 100%;
+          }
+  
+          &.three-quarters {
+            width: 75%;
+          }
+  
+          &.half {
+            width: 50%;
+          }
+  
+          &.third {
+            width: 33.333%;
+          }
+  
+          &.quarter {
+            width: 25%;
+          }
+          
+          // Field positioning.
+          
+          &.precedes.bottom {
+            border-bottom: 1px solid rgba(#000000, .05);
+          }
+  
+          &.precedes.right {
+            border-right: 1px solid rgba(#000000, .05);
+          }
+  
+          &.card-type {
+            background-size: 40px;
+            background-repeat: no-repeat;
+            background-position: top 25px right 25px;
+          }
+          
+          // Field labels.
+  
+          label {
+            font-size: 12px;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+            width: 100%;
+            float: left;
+          }
+          
+          // Radio fields.
+          
+          &.radios {
+            line-height: 19px;
+            
+            label {
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              cursor: pointer;
+            }
+            
+            .label {
+              float: left;
+            }
+            
+            .meta {
+              float: right;
+              font-size: 12px;
+              font-weight: 900;
+            }
+            
+            input[type=radio] {
+              position: absolute;
+              visibility: hidden;
+            }
+    
+            .radio {
+              width: 19px;
+              height: 19px;
+              float: left;
+              position: relative;
+              margin: 0 10px 0 0;
+              border: 1px solid rgba(#000000, .05);
+              border-radius: 50%;
+              
+              &:after {
+                width: 13px;
+                height: 13px;
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                border-radius: 50%;
+                content: '';
+                transition-duration: 0.25s;
+              }
+            }
+            
+            &:hover {
+              .radio {
+                &:after {
+                  background-color: rgba(#000000, .05);
+                }
+              }
+            }
+    
+            input[type=radio]:checked ~ .radio {
+              background-color: rgba(#000000, .025);
+              border-color: rgba(#000000, .5);
+              
+              &:after {
+                background-color: #000000;
+              }
+            }
+          }
+          
+          // Text, textarea and select fields.
+  
+          input,
+          textarea,
+          select {
+            border-bottom: 1px solid rgba(#000000, .05);
+            font-size: 12px;
+            line-height: 1.45;
+            width: 100%;
+            height: 40px;
+            float: left;
+            position: relative;
+            padding: 12px 0 0 0;
+            margin: 0;
+            transition-duration: 0.25s;
+            -webkit-appearance: none;
+            background: none;
+            border-radius: 0;
+          }
+  
+          textarea {
+            padding-top: 19px;
+          }
+          
+          select {
+            cursor: pointer;
+          }
+        }
+  
+        // Credit card fields.
+  
+        &.card {
+          background-color: rgba(#000000, 0.01);
+        }
+      }
+    }
+  }
+}
