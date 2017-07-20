@@ -12,6 +12,10 @@
   font-weight: 900;
   line-height: 29px;
 
+  &:hover {
+    box-shadow: inset 0 0 0 500px rgba(0,0,0,0.3);
+  }
+
   // Visual icon buttons.
 
   &.visual {
@@ -113,78 +117,78 @@
   // White buttons.
 
   &.white {
-    background-color: #ffffff;
-    color: rgba(#000000, 0.75);
+    background-color: $white;
+    color: rgba($black, 0.75);
   }
 
   // Black buttons.
 
   &.black {
-    background-color: rgba(#000000, 0.75);
-    color: rgba(#ffffff, 0.9);
+    background-color: rgba($black, 0.75);
+    color: rgba($white, 0.9);
 
     .icon {
-      background-color: #000000;
+      background-color: $black;
 
       svg {
-        fill: rgba(#ffffff, 0.9);
+        fill: rgba($white, 0.9);
       }
     }
 
     .meta {
-      background-color: #000000;
+      background-color: $black;
     }
   }
 
   // Blue buttons.
 
   &.blue {
-    background-color: rgba(#3498db, 0.75);
-    color: rgba(#ffffff, 0.9);
+    background-color: rgba($blue, 0.75);
+    color: rgba($white, 0.9);
 
     .icon {
-      background-color: #3498db;
+      background-color: $blue;
 
       svg {
-        fill: rgba(#ffffff, 0.9);
+        fill: rgba($white, 0.9);
       }
     }
 
     .meta {
-      background-color: #3498db;
+      background-color: $blue;
     }
   }
 
   // Green buttons.
 
   &.green {
-    background-color: rgba(#22a359, 0.85);
-    color: rgba(#ffffff, 0.9);
+    background-color: rgba($green, 0.85);
+    color: rgba($white, 0.9);
 
     .icon {
-      background-color: #22a359;
+      background-color: $green;
 
       svg {
-        fill: rgba(#ffffff, 0.9);
+        fill: rgba($white, 0.9);
       }
     }
 
     .meta {
-      background-color: #22a359;
+      background-color: $green;
     }
   }
 
   // Twitter buttons.
 
   &.twitter {
-    background-color: rgba(#4493da, .9);
-    color: rgba(#ffffff, 0.9);
+    background-color: rgba($twitter, .9);
+    color: rgba($white, 0.9);
 
     .icon {
-      background-color: #4493da;
+      background-color: $twitter;
 
       svg {
-        fill: rgba(#ffffff, 0.9);
+        fill: rgba($white, 0.9);
         height: 13px;
       }
     }
@@ -193,14 +197,14 @@
   // Facebook buttons.
 
   &.facebook {
-    background-color: rgba(#415893, .9);
-    color: rgba(#ffffff, 0.9);
+    background-color: rgba($facebook, .9);
+    color: rgba($white, 0.9);
 
     .icon {
-      background-color: #415893;
+      background-color: $facebook;
 
       svg {
-        fill: rgba(#ffffff, 0.9);
+        fill: rgba($white, 0.9);
         height: 16px;
       }
     }
@@ -209,14 +213,14 @@
   // Pinterest buttons.
 
   &.pinterest {
-    background-color: rgba(#bd081c, .9);
-    color: rgba(#ffffff, 0.9);
+    background-color: rgba($pinterest, .9);
+    color: rgba($white, 0.9);
 
     .icon {
-      background-color: #bd081c;
+      background-color: $pinterest;
 
       svg {
-        fill: rgba(#ffffff, 0.9);
+        fill: rgba($white, 0.9);
         height: 16px;
       }
     }
@@ -240,7 +244,7 @@
 
   svg {
     height: 100%;
-    fill: #000000;
+    fill: $black;
   }
 }
 
@@ -249,7 +253,7 @@
 
 .notification {
   height: 40px;
-  background-color: #fde472;
+  background-color: $yellow;
   text-align: center;
   line-height: 40px;
 }
@@ -258,7 +262,7 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .loadmore {
-  border-top: 1px solid rgba(#000000, 0.05);
+  border-top: 1px solid rgba($black, 0.05);
   height: 40px;
   position: relative;
   margin: 40px 0 21px;
@@ -293,7 +297,7 @@
   top: 30%;
   z-index: 30;
 
-  background-color: #000000;
+  background-color: $black;
   border-radius: 50%;
 
   cursor: pointer;
@@ -334,6 +338,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    fill: #ffffff;
+    fill: $white;
   }
 }
