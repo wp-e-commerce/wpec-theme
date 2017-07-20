@@ -41,6 +41,11 @@
         line-height: 60px;
         border-bottom: 1px solid rgba(#000000, .05);
 
+        @media ('max-width: 550px') {
+          height: 110px;
+          padding: 25px 0;
+        }
+
         .product-cover {
           width: 60px;
           height: 60px;
@@ -74,23 +79,23 @@
 
           @media ('max-width: 780px') {
             top: auto;
-            bottom: -11px;
+            bottom: -20px;
             left: auto;
             right: 0;
             transform: translate(0, 0);
           }
 
           a {
-            width: 20px;
-            height: 20px;
+            width: 35px;
+            height: 35px;
             float: left;
             position: relative;
             margin: 0 5px;
             background-color: #000000;
             border-radius: 50%;
 
-            @media ('max-width: 780px') {
-              margin: 0 0 0 5px;
+            &:hover {
+              background: #333;
             }
 
             svg {
