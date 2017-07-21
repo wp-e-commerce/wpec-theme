@@ -110,10 +110,10 @@
       
       h3 {
         padding-bottom: 8px;
-        border-bottom: 1px solid rgba(#000000, .05);
+        border-bottom: 1px solid rgba($black, .05);
         font-size: 12px;
         font-weight: 900;
-        color: #000000;
+        color: $black;
         text-transform: uppercase;
       }
       
@@ -126,7 +126,7 @@
           width: 100%;
           height: 30px;
           float: left;
-          border-bottom: 1px solid rgba(#000000, .05);
+          border-bottom: 1px solid rgba($black, .05);
           line-height: 29px;
           
           .box {
@@ -135,7 +135,7 @@
             float: left;
             position: relative;
             margin: 5px 10px 0 0;
-            border: 1px solid rgba(#000000, .05);
+            border: 1px solid rgba($black, .05);
             border-radius: 50%;
             
             &:after {
@@ -153,18 +153,18 @@
           &:hover {
             .box {
               &:after {
-                background-color: rgba(#000000, .05);
+                background-color: rgba($black, .05);
               }
             }
           }
           
           &.checked {
             .box {
-              background-color: rgba(#000000, .025);
-              border-color: rgba(#000000, .5);
+              background-color: rgba($black, .025);
+              border-color: rgba($black, .5);
               
               &:after {
-                background-color: #000000;
+                background-color: $black;
               }
             }
           }
@@ -195,7 +195,7 @@
             top: 5px;
             left: 5px;
             border-radius: 50%;
-            border: 1px dashed rgba(#ffffff, 0.0);
+            border: 1px dashed rgba($white, 0.0);
             content: '';
             transition-duration: 0.25s;
           }
@@ -203,7 +203,7 @@
           &:hover,
           &.checked {
             &:after {
-              border-color: rgba(#ffffff, .75);
+              border-color: rgba($white, .75);
             }
           }
         }
@@ -232,7 +232,7 @@
           float: left;
           position: relative;
           margin-right: 5px;
-          background-color: rgba(#000000, 0.025);
+          background-color: rgba($black, 0.025);
           border-radius: 50%;
           
           &:hover {

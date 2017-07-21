@@ -11,26 +11,26 @@ form {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.75;
-    color: #000000;
+    color: $black;
   }
   
   // Placeholder style.
 
   input::-webkit-input-placeholder,
   textarea::-webkit-input-placeholder {
-    color: rgba(#000000, .5);
+    color: rgba($black, .5);
     transition-duration: 0.25s;
   }
 
   input:-moz-placeholder,
   textarea:-moz-placeholder {
-    color: rgba(#000000, .5);
+    color: rgba($black, .5);
     transition-duration: 0.25s;
   }
 
   input:-ms-input-placeholder,
   textarea:-ms-input-placeholder {
-    color: rgba(#000000, .5);
+    color: rgba($black, .5);
     transition-duration: 0.25s;
   }
   
@@ -39,17 +39,17 @@ form {
   &.dark {
     input::-webkit-input-placeholder,
     textarea::-webkit-input-placeholder {
-      color: rgba(#ffffff, .5);
+      color: rgba($white, .5);
     }
 
     input:-moz-placeholder,
     textarea:-moz-placeholder {
-      color: rgba(#ffffff, .5);
+      color: rgba($white, .5);
     }
 
     input:-ms-input-placeholder,
     textarea:-ms-input-placeholder {
-      color: rgba(#ffffff, .5);
+      color: rgba($white, .5);
     }
   }
   
@@ -57,22 +57,22 @@ form {
   
   input:focus,
   textarea:focus {
-    color: #000000;
+    color: $black;
   }
 
   input:focus::-webkit-input-placeholder,
   textarea:focus::-webkit-input-placeholder {
-    color: rgba(#000000, 0.25);
+    color: rgba($black, 0.25);
   }
 
   input:focus:-moz-placeholder,
   textarea:focus:-moz-placeholder {
-    color: rgba(#000000, 0.25);
+    color: rgba($black, 0.25);
   }
   
   input:focus:-ms-input-placeholder,
   textarea:focus:-ms-input-placeholder {
-    color: rgba(#000000, 0.25);
+    color: rgba($black, 0.25);
   }
   
   // Dark focus style.
@@ -80,22 +80,22 @@ form {
   &.dark {
     input:focus,
     textarea:focus {
-      color: #ffffff;
+      color: $white;
     }
   
     input:focus::-webkit-input-placeholder,
     textarea:focus::-webkit-input-placeholder {
-      color: rgba(#ffffff, 0.25);
+      color: rgba($white, 0.25);
     }
   
     input:focus:-moz-placeholder,
     textarea:focus:-moz-placeholder {
-      color: rgba(#ffffff, 0.25);
+      color: rgba($white, 0.25);
     }
     
     input:focus:-ms-input-placeholder,
     textarea:focus:-ms-input-placeholder {
-      color: rgba(#ffffff, 0.25);
+      color: rgba($white, 0.25);
     }
   }
 }
@@ -132,7 +132,7 @@ form {
         float: left;
         position: relative;
         margin: 0 0 30px -25px;
-        border: 1px solid rgba(#000000, .05);
+        border: 1px solid rgba($black, .05);
         border-radius: 3px;
   
         &:last-of-type {
@@ -171,11 +171,11 @@ form {
           // Field positioning.
           
           &.precedes.bottom {
-            border-bottom: 1px solid rgba(#000000, .05);
+            border-bottom: 1px solid rgba($black, .05);
           }
   
           &.precedes.right {
-            border-right: 1px solid rgba(#000000, .05);
+            border-right: 1px solid rgba($black, .05);
           }
   
           &.card-type {
@@ -228,7 +228,7 @@ form {
               float: left;
               position: relative;
               margin: 0 10px 0 0;
-              border: 1px solid rgba(#000000, .05);
+              border: 1px solid rgba($black, .05);
               border-radius: 50%;
               
               &:after {
@@ -246,17 +246,17 @@ form {
             &:hover {
               .radio {
                 &:after {
-                  background-color: rgba(#000000, .05);
+                  background-color: rgba($black, .05);
                 }
               }
             }
     
             input[type=radio]:checked ~ .radio {
-              background-color: rgba(#000000, .025);
-              border-color: rgba(#000000, .5);
+              background-color: rgba($black, .025);
+              border-color: rgba($black, .5);
               
               &:after {
-                background-color: #000000;
+                background-color: $black;
               }
             }
           }
@@ -266,7 +266,7 @@ form {
           input,
           textarea,
           select {
-            border-bottom: 1px solid rgba(#000000, .05);
+            border-bottom: 1px solid rgba($black, .05);
             font-size: 12px;
             line-height: 1.45;
             width: 100%;
@@ -293,7 +293,7 @@ form {
         // Credit card fields.
   
         &.card {
-          background-color: rgba(#000000, 0.01);
+          background-color: rgba($black, 0.01);
         }
       }
     }

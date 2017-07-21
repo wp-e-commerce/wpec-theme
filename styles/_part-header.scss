@@ -3,7 +3,7 @@
 ---------------------------------------------------------------------------------------------------- */
 
 #header {
-  background-color: rgba(#000000, 0.015);
+  background-color: rgba($black, 0.015);
 
   // Add the fadeindown animation.
 
@@ -15,18 +15,18 @@
 
   .bar {
     height: 40px;
-    background-color: #000000;
+    background-color: $black;
     font-size: 12px;
     font-weight: 400;
     line-height: 40px;
-    color: #ffffff;
+    color: $white;
     text-transform: uppercase;
 
     a {
-      color: #ffffff;
+      color: $white;
 
       &:hover {
-        color: rgba(#ffffff, .75);
+        color: rgba($white, .75);
       }
     }
 
@@ -47,7 +47,7 @@
 
         svg {
           height: 14px;
-          fill: #ffffff;
+          fill: $white;
         }
       }
     }
@@ -66,10 +66,10 @@
           height: 20px;
           float: right;
           margin: 10px 0 0 10px;
-          background-color: rgba(#ffffff, 0.95);
+          background-color: rgba($white, 0.95);
           border-radius: 50%;
           line-height: 20px;
-          color: #000000;
+          color: $black;
           font-weight: 900;
           text-align: center;
         }
@@ -97,7 +97,7 @@
       img {
         height: 100%;
         float: left;
-        fill: #000000;
+        fill: $black;
       }
 
       h1 {
@@ -107,7 +107,7 @@
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         font-weight: 400;
-        color: #000000;
+        color: $black;
         text-transform: uppercase;
       }
 
@@ -130,7 +130,7 @@
       float: left;
       margin: 30px 0 0 30px;
       padding-left: 30px;
-      border-left: 1px solid #000000;
+      border-left: 1px solid $black;
 
       @media ('max-width: 600px') {
         display: none;
@@ -142,11 +142,11 @@
         line-height: 40px;
         font-size: 12px;
         font-weight: 900;
-        color: #000000;
+        color: $black;
         text-transform: uppercase;
 
         &:hover {
-          color: rgba(#000000, 0.5);
+          color: rgba($black, 0.5);
         }
       }
     }
@@ -165,8 +165,8 @@
         height: 40px;
         float: left;
         padding: 0 20px;
-        background-color: #ffffff;
-        border: 1px solid rgba(#000000, 0.075);
+        background-color: $white;
+        border: 1px solid rgba($black, 0.075);
         border-radius: 20px;
         line-height: 40px;
         transition-duration: 0.25s;
@@ -180,7 +180,7 @@
         right: 0;
         z-index: 10;
         border-radius: 50%;
-        background-color: #000000;
+        background-color: $black;
 
         &.toggle {
           visibility: hidden;
@@ -192,7 +192,7 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          fill: #ffffff;
+          fill: $white;
         }
       }
 

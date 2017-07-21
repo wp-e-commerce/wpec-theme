@@ -20,7 +20,7 @@
   .order {
     padding: 21px 25px 30px;
     margin-bottom: 57px;
-    border: 1px solid rgba(#000000, .05);
+    border: 1px solid rgba($black, .05);
     border-radius: 6px;
     
     header {
@@ -55,7 +55,7 @@
       display: inline-block;
       padding: 48px 120px 53px;
       margin-top: 23px;
-      background-color: rgba(#000000, 0.025);
+      background-color: rgba($black, 0.025);
       border-radius: 6px;
       
       h4 {

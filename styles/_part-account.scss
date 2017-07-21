@@ -61,7 +61,7 @@
       .order {
         padding: 21px 25px 30px;
         margin-bottom: 60px;
-        border: 1px solid rgba(#000000, .05);
+        border: 1px solid rgba($black, .05);
         border-radius: 6px;
         transform: translateX(-25px);
 
@@ -108,10 +108,10 @@
         float: left;
         position: relative;
         line-height: 39px;
-        border-top: 1px solid rgba(#000000, .05);
+        border-top: 1px solid rgba($black, .05);
 
         &:hover {
-          color: rgba(#000000, 0.5);
+          color: rgba($black, 0.5);
         }
 
         svg {

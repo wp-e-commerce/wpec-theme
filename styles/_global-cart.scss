@@ -7,7 +7,7 @@
   // Cart Overview: All the things in your cart, tax, totals, etc.
 
   .overview {
-    border-top: 1px solid rgba(#000000, .05);
+    border-top: 1px solid rgba($black, .05);
 
     // Individual cart items.
 
@@ -39,7 +39,7 @@
         height: 90px;
         padding: 15px 0;
         line-height: 60px;
-        border-bottom: 1px solid rgba(#000000, .05);
+        border-bottom: 1px solid rgba($black, .05);
 
         @media ('max-width: 550px') {
           height: 110px;
@@ -64,7 +64,7 @@
           float: left;
           margin-right: 1px;
           padding: 1px 4px 0;
-          background-color: rgba(#000000, .025);
+          background-color: rgba($black, .025);
           border-radius: 3px;
           font-size: 12px;
         }
@@ -91,11 +91,11 @@
             float: left;
             position: relative;
             margin: 0 5px;
-            background-color: #000000;
+            background-color: $black;
             border-radius: 50%;
 
             &:hover {
-              background: #333;
+              background: lighten($black, 30%);
             }
 
             svg {
@@ -104,7 +104,7 @@
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
-              fill: #ffffff;
+              fill: $white;
             }
 
             &.edit svg {
@@ -135,7 +135,7 @@
 
       &.totals {
         padding-top: 9px;
-        border-bottom: 1px dashed rgba(#000000, .05);
+        border-bottom: 1px dashed rgba($black, .05);
       }
 
       &.total {
