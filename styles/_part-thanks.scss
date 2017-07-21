@@ -53,10 +53,17 @@
     
     .address {
       display: inline-block;
-      padding: 48px 120px 53px;
-      margin-top: 23px;
+      width: 350px;
+      min-height: 180px;
+      padding: 48px;
+      border-box: box-sizing;
+      margin: 23px auto 0;
       background-color: rgba($black, 0.025);
       border-radius: 6px;
+
+      @media (max-width: 550px) {
+        width: 100%;
+      }
       
       h4 {
         font-size: 18px;
