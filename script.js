@@ -266,13 +266,13 @@ $.fn.isInViewport = function() {
     return elementBottom > viewportTop && elementTop < viewportBottom;
 };
 
-$(window).on('resize scroll', function() {
-    if ($('.side:not(.toggled)').isInViewport()) {
-      $('.slider.left').removeClass('toggled');
-    } else {
-      $('.slider.left').addClass('toggled');
-    }
-});
+// $(window).on('resize scroll', function() {
+//     if ($('.side:not(.toggled)').isInViewport()) {
+//       $('.slider.left').removeClass('toggled');
+//     } else {
+//       $('.slider.left').addClass('toggled');
+//     }
+// });
 
 // Open the sidebar and blur the main content.
 
