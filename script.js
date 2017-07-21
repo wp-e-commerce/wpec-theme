@@ -8,7 +8,7 @@ function parallax_scrolling() {
   // Comp Screenshots
   $('.slide').css('transform','translate3d(0, +' + ((scrolled*0.30)) + 'px, 0)');
 
-  $('.slide.more').css('transform','translate3d(0, +' + ((scrolled*0.40)) + 'px, 0)');
+  $('.slide.more').css('transform','translate3d(0, +' + ((scrolled*0.80)) + 'px, 0)');
 }
 
 if ($(window).width() >= 860){
