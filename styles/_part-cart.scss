@@ -24,6 +24,8 @@
     transform: translateX(-50%);
     margin-top: 60px;
 
+    @extend %hover;
+
     @media ('max-width: 900px') {
       width: auto;
       float: left;

@@ -93,10 +93,7 @@
             margin: 0 5px;
             background-color: $black;
             border-radius: 50%;
-
-            &:hover {
-              background: lighten($black, 30%);
-            }
+            @extend %hover;
 
             svg {
               height: 14px;
@@ -147,9 +144,5 @@
         }
       }
     }
-  }
-
-  .button.checkout {
-    margin-top: 30px;
   }
 }
