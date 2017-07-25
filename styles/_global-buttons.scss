@@ -49,6 +49,13 @@
     }
   }
 
+  //Show Order Details button
+  &.more{
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+
   // Large buttons.
 
   &.large {

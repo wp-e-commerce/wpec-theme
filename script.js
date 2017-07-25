@@ -170,6 +170,30 @@ $(function () {
   });
 });
 
+/* Toggle Order History Details
+---------------------------------------------------------------------------------------------------- */
+
+$(document).on('click', '.order .more', function(e) {
+
+  e.preventDefault();
+
+  var $button = $(this);
+  var $buttonText = $(this).html();
+  var $thisOrder = $(this).closest('.order').children().find('.row');
+
+  // Change Button Text
+  if( $buttonText === 'More Details') {
+    $button.text("Less Details");
+  } else {
+    $button.text("More Details");
+  }
+
+  // Show Order History Details
+  $thisOrder.not('.overview').not('.total').toggleClass('hide');
+
+});
+
+
 /* Menu Toggles: Used for opening and closing sub-menus.
 ---------------------------------------------------------------------------------------------------- */
 

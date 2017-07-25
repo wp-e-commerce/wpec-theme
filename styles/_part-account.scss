@@ -71,10 +71,15 @@
 
         header {
           margin-bottom: 24px;
+          position: relative;
 
           h4 {
             font-weight: 900;
           }
+        }
+
+        .hide {
+          display: none;
         }
       }
     }
