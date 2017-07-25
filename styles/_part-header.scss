@@ -181,6 +181,7 @@
         z-index: 10;
         border-radius: 50%;
         background-color: $black;
+        transition: .25s;
 
         &:hover {
           right: -3px;
