@@ -11,6 +11,10 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 
+  a {
+    color: rgba($black, 0.95);
+  }
+
   h1,
   h2 {
     font-family: 'Lora', serif;
