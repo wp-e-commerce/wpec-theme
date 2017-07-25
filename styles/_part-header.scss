@@ -182,6 +182,10 @@
         border-radius: 50%;
         background-color: $black;
 
+        &:hover {
+          right: -3px;
+        }
+
         &.toggle {
           visibility: hidden;
         }
