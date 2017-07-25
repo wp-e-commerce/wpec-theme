@@ -11,10 +11,6 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 
-  a {
-    color: rgba($black, 0.95);
-  }
-
   h1,
   h2 {
     font-family: 'Lora', serif;
@@ -28,6 +24,19 @@ body {
 
     @media ('max-width: 480px') {
       font-size: 30px;
+    }
+  }
+
+  article,
+  .article {
+    a {
+      color: rgba($black, 0.95);
+      border-bottom: 1px dotted rgba($black, 0.95);
+
+      &:hover {
+        color: rgba($black, 0.5);
+        border-bottom: 1px dotted rgba($black, 0.5);
+      }
     }
   }
 }
