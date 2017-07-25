@@ -118,11 +118,9 @@
     margin-right: -15px;
   }
 
-  // Global hover state.
+  // Global hover state (See _global-extensions.scss).
 
-  &:hover {
-    transform: translateY(-3px);
-  }
+  @extend %hover;
 
   // White buttons.
 
